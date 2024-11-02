@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio</title>
+    <link rel="stylesheet" href="frontend-styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="profile-image">
+            <img src="/api/placeholder/150/150" alt="Your Name">
+        </div>
+        <h1>Your Name</h1>
+        <p>Professional Title</p>
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#experience">Experience</a> |
+            <a href="#education">Education</a> |
+            <a href="#skills">Skills</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Your professional summary goes here. Make it compelling!</p>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div class="experience-item">
+                <h3>Job Title</h3>
+                <p class="date">Company Name | 2020 - Present</p>
+                <ul>
+                    <li>Achievement 1</li>
+                    <li>Achievement 2</li>
+                    <li>Achievement 3</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Degree Name</h3>
+                <p class="date">University Name | Graduation Year</p>
+                <p>Relevant achievements and honors</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <span class="skill-tag">Skill 1</span>
+                <span class="skill-tag">Skill 2</span>
+                <span class="skill-tag">Skill 3</span>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="formAlert" style="display: none;"></div>
+        </section>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
